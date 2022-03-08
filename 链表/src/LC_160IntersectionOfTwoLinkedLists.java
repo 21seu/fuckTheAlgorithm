@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。
  * 如果两个链表不存在相交节点，返回 null 。
@@ -20,4 +23,31 @@
  * 在 A 中，相交节点前有 2 个节点；在 B 中，相交节点前有 3 个节点。
  **/
 public class LC_160IntersectionOfTwoLinkedLists {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        //2、双指针
+        if (headA == null || headB == null) return null;
+        ListNode p1 = headA, p2 = headB;
+        while (p1 != p2) {
+            p1 = p1 == null ? headB : p1.next;
+            p2 = p2 == null ? headA : p2.next;
+        }
+        return p1;
+
+        //1、hash 空间O(m+n) 时间O(m)
+//        Set<ListNode> set = new HashSet<ListNode>();
+//        ListNode temp = headA;
+//        while(temp != null) {
+//            set.add(temp);
+//            temp = temp.next;
+//        }
+//        temp = headB;
+//        while(temp != null) {
+//            if(set.add(temp)) {
+//                temp = temp.next;
+//            }else{
+//                return temp;
+//            }
+//        }
+//        return null;
+    }
 }
