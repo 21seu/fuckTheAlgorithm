@@ -7,9 +7,11 @@
       <module fileurl="file://$PROJECT_DIR$/动态规划/动态规划.iml" filepath="$PROJECT_DIR$/动态规划/动态规划.iml" />
       <module fileurl="file://$PROJECT_DIR$/双指针/双指针.iml" filepath="$PROJECT_DIR$/双指针/双指针.iml" />
       <module fileurl="file://$PROJECT_DIR$/字符串&amp;数组/字符串&amp;数组.iml" filepath="$PROJECT_DIR$/字符串&amp;数组/字符串&amp;数组.iml" />
+      <module fileurl="file://$PROJECT_DIR$/排序算法/排序算法.iml" filepath="$PROJECT_DIR$/排序算法/排序算法.iml" />
       <module fileurl="file://$PROJECT_DIR$/树/树.iml" filepath="$PROJECT_DIR$/树/树.iml" />
       <module fileurl="file://$PROJECT_DIR$/滑动窗口/滑动窗口.iml" filepath="$PROJECT_DIR$/滑动窗口/滑动窗口.iml" />
       <module fileurl="file://$PROJECT_DIR$/链表/链表.iml" filepath="$PROJECT_DIR$/链表/链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/队列&amp;栈/队列&amp;栈.iml" filepath="$PROJECT_DIR$/队列&amp;栈/队列&amp;栈.iml" />
     </modules>
   </component>
 </project>
