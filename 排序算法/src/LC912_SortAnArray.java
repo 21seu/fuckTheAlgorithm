@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -31,7 +29,7 @@ public class LC912_SortAnArray {
             return;
         }
 
-        int index = pratition(nums, left, right);
+        int index = partition(nums, left, right);
         quickSort(nums, left, index - 1);
         quickSort(nums, index + 1, right);
     }
@@ -56,7 +54,7 @@ public class LC912_SortAnArray {
         }
     }
 
-    private int pratition(int[] nums, int left, int right) {
+    private int partition(int[] nums, int left, int right) {
         int randomIndex = new Random().nextInt(right - left + 1) + left;
         swap(nums, left, randomIndex);
 
@@ -79,25 +77,7 @@ public class LC912_SortAnArray {
         nums[right] = temp;
     }
 
-    public List<Integer> findDuplicates(int[] nums) {
-        List<Integer> res = new ArrayList();
-        int len = nums.length;
-        for (int i = 0; i < len; i++) {
-            while (nums[i] != nums[nums[i] - 1]) {
-                swap(nums, i, nums[i] - 1);
-            }
-        }
-
-        for(int i = 0; i < len; i++) {
-            if(nums[i] != i + 1) {
-                res.add(nums[i]);
-            }
-        }
-        return res;
-    }
-
     public static void main(String[] args) {
-        int[] arr = {4,3,2,7,8,2,3,1};
-        new LC912_SortAnArray().findDuplicates(arr);
+        
     }
 }
