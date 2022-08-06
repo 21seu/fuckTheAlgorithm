@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/树/树.iml" filepath="$PROJECT_DIR$/树/树.iml" />
       <module fileurl="file://$PROJECT_DIR$/每日一题/每日一题.iml" filepath="$PROJECT_DIR$/每日一题/每日一题.iml" />
       <module fileurl="file://$PROJECT_DIR$/滑动窗口/滑动窗口.iml" filepath="$PROJECT_DIR$/滑动窗口/滑动窗口.iml" />
+      <module fileurl="file://$PROJECT_DIR$/贪心算法/贪心算法.iml" filepath="$PROJECT_DIR$/贪心算法/贪心算法.iml" />
       <module fileurl="file://$PROJECT_DIR$/链表/链表.iml" filepath="$PROJECT_DIR$/链表/链表.iml" />
       <module fileurl="file://$PROJECT_DIR$/队列&amp;栈/队列&amp;栈.iml" filepath="$PROJECT_DIR$/队列&amp;栈/队列&amp;栈.iml" />
     </modules>
