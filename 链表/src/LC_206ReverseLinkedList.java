@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -40,5 +41,27 @@ public class LC_206ReverseLinkedList {
             cur = cur.next;
         }
         return head;
+    }
+
+    public ListNode reverseList3(ListNode head) {
+        return dfs(head, null);
+    }
+
+    private ListNode dfs(ListNode cur, ListNode pre) {
+        if (cur == null) return pre; // 终止条件
+        ListNode res = dfs(cur.next, cur);  // 递归后继节点
+        cur.next = pre;              // 修改节点引用指向
+        return res;                  // 返回反转链表的头节点
+    }
+
+    public static void main(String[] args) {
+        ListNode head = new ListNode(1);
+        ListNode curr = head;
+        curr.next = new ListNode(2);
+        curr = curr.next;
+        curr.next = new ListNode(3);
+        curr = curr.next;
+        curr.next = new ListNode(4);
+        System.out.println(new LC_206ReverseLinkedList().reverseList3(head));
     }
 }
