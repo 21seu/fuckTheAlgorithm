@@ -25,6 +25,20 @@ public class LC_541ReverseStringII {
         return part_part != 0 ? reverse(s, start, start + part_part - 1) : s;
     }
 
+    /**
+     * 优化写法
+     * @param s
+     * @param k
+     * @return
+     */
+    public String reverseStr2(String s, int k) {
+        int len = s.length();
+        for (int i = 0; i < len; i+= 2 * k) {
+            s = reverse(s, i, Math.min(len, i + k) - 1);
+        }
+        return s;
+    }
+
     private String reverse(String s, int start, int end) {
         char[] chArr = s.toCharArray();
         while (start <= end) {
